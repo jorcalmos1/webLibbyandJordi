@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style>
+		.flip{
+position: relative;
+transition: all 5s ease;
+transform: perspective(600px);
+transform-origin: 50% 50%;
+transform-style: preserve-3d;
+}
+.flip:hover{
+transform: perspective(600px) rotateY(-180deg)/* translateX(100%);*/
+}
+		
+
+		.flip .flip-1,
+        .flip .flip-2{
+           position: absolute;
+           backface-visibility: hidden;
+        }
+          .flip .flip-2{
+           transform: rotateY(-180deg);
+        }
+	</style>
+</head>
+<body>
+
+
+
+
+	 <!-- <div class="flip Y">
+	     <div class="front" data-text="Familia Libby al completo">
+	     	<img src="fotos_nota/IMG_9478.JPG" alt="">
+	     </div>
+	     <div class="back" data-text="Familia Libby al completo"><center><h3>Familia Libby</h3></center>
+	       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quod, neque, quae ut, consequuntur molestiae inventore maxime et, impedit dicta voluptate. Et error, rerum ab similique tempore doloribus reprehenderit dolore.</p></div>
+	   </div> -->
+
+  <div class="flip">
+<img src="fotos_nota/IMG_9478.JPG" class="flip-1">
+<div class="flip-2"> Texto de prueba </div>
+</div>
+	
+</body>
+</html>
